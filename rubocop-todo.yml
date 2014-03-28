@@ -12,14 +12,3 @@ Documentation:
 # Offence count: 19
 LineLength:
   Max: 174
-
-# Offence count: 11
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle, SupportedStyles.
-StringLiterals:
-  Enabled: false
-
-# Offence count: 2
-# Cop supports --auto-correct.
-TrailingBlankLines:
-  Enabled: false
