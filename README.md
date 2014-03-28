@@ -5,6 +5,11 @@
 Resthook is a mountable implementation of the [Resthook pattern](www.resthook.org).
 By adding Resthook to your rails application you can instantly provide discoverable callbacks and integrations. We've built it to integrate [Rooster](www.getrooster.com) with Zapier.
 
+[![Build Status](https://travis-ci.org/yosemsweet/resthook.svg?branch=master)](https://travis-ci.org/yosemsweet/resthook)
+[![Coverage Status](https://coveralls.io/repos/yosemsweet/resthook/badge.png)](https://coveralls.io/r/yosemsweet/resthook)
+[![Code Climate](https://codeclimate.com/github/yosemsweet/resthook.png)](https://codeclimate.com/github/yosemsweet/resthook)
+
+
 ## Usage
 ### Installation
 Add resthook to your `Gemfile`
