@@ -21,12 +21,39 @@ mount Resthook::Engine, at: "/resthook"
 ### Configuration
 Now that you have resthook installed you'll need to let it know what resources you want to provide hooks for.
 
-Create an initializer in `config/initializers/resthook.rb`
+With each model you want track
 ```ruby
-Resthook.configure do |config|
-  hook :model_name, events: [:create, :update, :delete]
+class Account < ActiveRecord::Base
+	hook
 end
 ```
+if you want to only expose hooks for specific actions you can specify those as well
+```ruby
+class Account < ActiveRecord::Base
+  hook actions: [:create, :delete]
+end
+```
+
+### Authorization restrictions
+In some cases you may not want to allow any old resthook consumer to subscribe to a models hooks. You can restrict the consumers by providing an authorization lambda.
+```ruby
+class Post < ActiveRecord::Base
+  hook authorization: -> do |token, options|
+    account = Account.find_by(key: token)
+    authorized = false
+    if(options.has_key? :post_id)
+      # options includes the resource id for delete and update subscriptions
+      post = Post.find(options[:post_id])
+      authorized = post && post.account == account
+    elsif(options.has_key? :account_id)
+      # authorization for create subscriptions
+      authorized = account.id == options[:account_id]
+    end
+    authorized
+  end
+end
+```
+
 
 
 
