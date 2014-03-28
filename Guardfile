@@ -1,6 +1,5 @@
-# A sample Guardfile
-# More info at https://github.com/guard/guard#readme
-group :inprogress do
+# We don't want to run rubocop and inch if minitest failed.
+group :in_progress, halt_on_fail: true do
   guard :minitest do
     watch(/^test\/.+_test\.rb$/)
     watch('test\/test_helper.rb')  { 'test' }
@@ -11,9 +10,7 @@ group :inprogress do
     watch(/^app\/(.+)\.rb/) { |m| 'test/#{m[1]}_test.rb' }
     watch(%r{^app/controllers/*\.rb}) { 'test/controllers' }
   end
-end
 
-group :final do
   guard :rubocop do
     watch(/.+\.rb$/)
     watch(/(?:.+\/)?\.rubocop\.yml$/) { |m| File.dirname(m[0]) }
@@ -30,8 +27,8 @@ group :final do
       end
 
       def run_on_changes(paths)
-        puts 'inching towards #{paths}'
-        Kernel.system('inch', paths)
+        puts "inching towards #{paths}"
+        Kernel.system('inch', paths.join)
       end
     end
   end

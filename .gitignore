@@ -10,6 +10,11 @@
 # http://github.com/RailsApps/rails-composer/issues
 #----------------------------------------------------------------------------
 
+# Dummy app files
+/test/dummy/log/*
+/test/dummy/db/*
+/test/dummy/tmp/*
+
 # bundler state
 /.bundle
 /vendor/bundle/
