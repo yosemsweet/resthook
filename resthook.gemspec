@@ -11,12 +11,17 @@ Gem::Specification.new do |s|
   s.email       = ['yosem.sweet@gmail.com']
   s.homepage    = 'https://github.com/yosemsweet/resthook'
   s.summary     = 'Add Resthooks to your Rails app with ease'
-  s.description = %{Resthook is a mountable implementation of the Resthook pattern. By adding Resthook to your rails application you can instantly provide discoverable callbacks and integrations. We've built it to integrate Rooster with Zapier.}
+  s.description = <<-DESC.gsub(/^ {4}/, '')
+    Resthook is a mountable implementation of the Resthook pattern. By adding
+    Resthook to your rails application you can instantly provide discoverable
+    callbacks and integrations. We've built it to integrate Rooster with Zapier.
+  DESC
 
   s.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
   s.test_files = Dir['test/**/*']
 
   s.add_dependency 'rails', '~> 4.0.4'
+  s.add_dependency 'haml', '~> 4.0'
 
   s.add_development_dependency 'sqlite3'
   s.add_development_dependency 'pry-rails'
