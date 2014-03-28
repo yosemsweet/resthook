@@ -1,4 +1,4 @@
-require "resthook/engine"
+require 'resthook/engine'
 
 module Resthook
 end
