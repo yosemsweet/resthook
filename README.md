@@ -8,6 +8,7 @@ By adding Resthook to your rails application you can instantly provide discovera
 [![Build Status](https://travis-ci.org/yosemsweet/resthook.svg?branch=master)](https://travis-ci.org/yosemsweet/resthook)
 [![Coverage Status](https://coveralls.io/repos/yosemsweet/resthook/badge.png)](https://coveralls.io/r/yosemsweet/resthook)
 [![Code Climate](https://codeclimate.com/github/yosemsweet/resthook.png)](https://codeclimate.com/github/yosemsweet/resthook)
+[![Inline docs](http://inch-pages.github.io/github/yosemsweet/resthook.png)](http://inch-pages.github.io/github/yosemsweet/resthook)
 
 
 ## Usage
