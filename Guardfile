@@ -1,31 +1,45 @@
 # A sample Guardfile
 # More info at https://github.com/guard/guard#readme
+group :inprogress do
+  guard :minitest do
+    watch(/^test\/.+_test\.rb$/)
+    watch('test\/test_helper.rb')  { 'test' }
+    watch(/^lib\/(.+)\.rb$/) { |m| 'test/#{m[1]}_test.rb' }
+    watch(/^lib\/(.+)\.rb$/) { |m| 'test/integration' }
 
-guard :rubocop do
-  watch(/.+\.rb$/)
-  watch(/(?:.+\/)?\.rubocop\.yml$/) { |m| File.dirname(m[0]) }
-end
-
-require 'guard/plugin'
-
-module ::Guard
-  # Inch Guard for measuring documentation progress
-  class Inch < ::Guard::Plugin
-    def run_all
-      puts 'inching along towards everything'
-      Kernel.system('bundle exec inch')
-    end
-
-    def run_on_changes(paths)
-      puts 'inching towards #{paths}'
-      Kernel.system('inch', paths)
-    end
+    # Rails 4
+    watch(/^app\/(.+)\.rb/) { |m| 'test/#{m[1]}_test.rb' }
+    watch(%r{^app/controllers/*\.rb}) { 'test/controllers' }
   end
 end
 
-guard :inch do
-  watch(/app\/.*.rb$/)
-  watch(/lib\/.*.rb$/)
-  watch(/config\/.*.rb$/)
-  watch(/README\.md$/)
+group :final do
+  guard :rubocop do
+    watch(/.+\.rb$/)
+    watch(/(?:.+\/)?\.rubocop\.yml$/) { |m| File.dirname(m[0]) }
+  end
+
+  require 'guard/plugin'
+
+  module ::Guard
+    # Inch Guard for measuring documentation progress
+    class Inch < ::Guard::Plugin
+      def run_all
+        puts 'inching along towards everything'
+        Kernel.system('bundle exec inch')
+      end
+
+      def run_on_changes(paths)
+        puts 'inching towards #{paths}'
+        Kernel.system('inch', paths)
+      end
+    end
+  end
+
+  guard :inch do
+    watch(/app\/.*.rb$/)
+    watch(/lib\/.*.rb$/)
+    watch(/config\/.*.rb$/)
+    watch(/README\.md$/)
+  end
 end
