@@ -4,5 +4,4 @@ rvm:
 
 env:
   - DB=postgresql
-bundler_args: --without development
 cache: bundler
