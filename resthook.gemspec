@@ -26,10 +26,11 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'sqlite3'
   s.add_development_dependency 'pry-rails'
   s.add_development_dependency 'inch', '~> 0.3'
-  s.add_development_dependency 'rubocop', '~> 0.18.1'
   s.add_development_dependency 'coveralls'
-  s.add_development_dependency 'guard-minitest', '~> 2.0'
-  s.add_development_dependency 'guard-rubocop', '~> 1.0'
+  s.add_development_dependency 'rspec-rails'
+  s.add_development_dependency 'capybara'
+  s.add_development_dependency 'guard-rspec'
+  s.add_development_dependency 'factory_girl_rails'
   s.add_development_dependency 'rb-fsevent', '~> 0' if RUBY_PLATFORM =~ /darwin/i
   s.add_development_dependency 'terminal-notifier-guard', '~> 1.5' if RUBY_PLATFORM =~ /darwin/i
 end

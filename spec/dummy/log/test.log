@@ -1,0 +1,489 @@
+  [1m[36m (1.1ms)[0m  [1mbegin transaction[0m
+-------------------------------
+ResthookTest: test_is_an_engine
+-------------------------------
+  [1m[35m (2.2ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+-------------------------------
+ResthookTest: test_is_an_engine
+-------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+NavigationTest: test_View_resthooks_admin_panel
+-----------------------------------------------
+Started GET "/resthook" for 127.0.0.1 at 2014-03-28 15:21:40 -0700
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+NavigationTest: test_View_resthooks_admin_panel
+-----------------------------------------------
+Started GET "/resthook" for 127.0.0.1 at 2014-03-28 15:34:59 -0700
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+NavigationTest: test_View_resthooks_admin_panel
+-----------------------------------------------
+Started GET "/resthook" for 127.0.0.1 at 2014-03-28 15:38:34 -0700
+Processing by Resthook::DashboardController#show as HTML
+Completed 500 Internal Server Error in 38ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+NavigationTest: test_View_resthooks_admin_panel
+-----------------------------------------------
+Started GET "/resthook" for 127.0.0.1 at 2014-03-28 16:09:45 -0700
+Processing by Resthook::DashboardController#show as HTML
+Completed 500 Internal Server Error in 49ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+NavigationTest: test_View_resthooks_admin_panel
+-----------------------------------------------
+Started GET "/resthook" for 127.0.0.1 at 2014-03-28 16:10:10 -0700
+Processing by Resthook::DashboardController#show as HTML
+Completed 500 Internal Server Error in 11ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------
+ResthookTest: test_is_an_engine
+-------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+NavigationTest: test_View_resthooks_admin_panel
+-----------------------------------------------
+Started GET "/resthook" for 127.0.0.1 at 2014-03-28 16:12:08 -0700
+Processing by Resthook::DashboardController#show as HTML
+  Rendered /Users/yosem/workspace/resthook/app/views/resthook/dashboard/show.html.haml within layouts/resthook/application (533.0ms)
+Completed 500 Internal Server Error in 723ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+NavigationTest: test_View_resthooks_admin_panel
+-----------------------------------------------
+Started GET "/resthook" for 127.0.0.1 at 2014-03-28 16:16:49 -0700
+Processing by Resthook::DashboardController#show as HTML
+  Rendered /Users/yosem/workspace/resthook/app/views/resthook/dashboard/show.html.haml within layouts/resthook/application (3.6ms)
+Completed 500 Internal Server Error in 25ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+NavigationTest: test_View_resthooks_admin_panel
+-----------------------------------------------
+Started GET "/resthook" for 127.0.0.1 at 2014-03-28 16:18:18 -0700
+Processing by Resthook::DashboardController#show as HTML
+  Rendered /Users/yosem/workspace/resthook/app/views/resthook/dashboard/show.html.haml within layouts/resthook/application (3.1ms)
+Completed 500 Internal Server Error in 19ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+NavigationTest: test_View_resthooks_admin_panel
+-----------------------------------------------
+Started GET "/resthook" for 127.0.0.1 at 2014-03-28 16:19:00 -0700
+Processing by Resthook::DashboardController#show as HTML
+  Rendered /Users/yosem/workspace/resthook/app/views/resthook/dashboard/show.html.haml within layouts/resthook/application (3.8ms)
+Completed 200 OK in 41ms (Views: 40.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+NavigationTest: test_View_resthooks_admin_panel
+-----------------------------------------------
+Started GET "/resthook" for 127.0.0.1 at 2014-03-28 16:19:27 -0700
+Processing by Resthook::DashboardController#show as HTML
+  Rendered /Users/yosem/workspace/resthook/app/views/resthook/dashboard/show.html.haml within layouts/resthook/application (3.1ms)
+Completed 500 Internal Server Error in 19ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (1.3ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+NavigationTest: test_View_resthooks_admin_panel
+-----------------------------------------------
+Started GET "/resthook" for 127.0.0.1 at 2014-03-28 16:19:50 -0700
+Processing by Resthook::DashboardController#show as HTML
+  Rendered /Users/yosem/workspace/resthook/app/views/resthook/dashboard/show.html.haml within layouts/resthook/application (3.8ms)
+Completed 200 OK in 52ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+NavigationTest: test_View_resthooks_admin_panel
+-----------------------------------------------
+Started GET "/resthook" for 127.0.0.1 at 2014-03-28 16:26:49 -0700
+Processing by Resthook::DashboardController#show as HTML
+  Rendered /Users/yosem/workspace/resthook/app/views/resthook/dashboard/show.html.haml within layouts/resthook/application (4.5ms)
+Completed 200 OK in 72ms (Views: 71.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+NavigationTest: test_View_resthooks_admin_panel
+-----------------------------------------------
+Started GET "/resthook" for 127.0.0.1 at 2014-03-28 16:26:59 -0700
+Processing by Resthook::DashboardController#show as HTML
+  Rendered /Users/yosem/workspace/resthook/app/views/resthook/dashboard/show.html.haml within layouts/resthook/application (3.0ms)
+Completed 200 OK in 121ms (Views: 120.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+---------------------------------------
+Resthook::HookTest: test_has_a_resource
+---------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------
+Resthook::HookTest: test_has_an_action
+--------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+---------------------------------------
+Resthook::HookTest: test_has_a_resource
+---------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------
+Resthook::HookTest: test_has_an_action
+--------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+---------------------------------------
+Resthook::HookTest: test_has_a_resource
+---------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------
+Resthook::HookTest: test_has_an_action
+--------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+NavigationTest: test_View_resthooks_admin_panel
+-----------------------------------------------
+Started GET "/resthook" for 127.0.0.1 at 2014-03-28 21:42:19 -0700
+Processing by Resthook::DashboardController#show as HTML
+  Rendered /Users/yosem/workspace/resthook/app/views/resthook/dashboard/show.html.haml within layouts/resthook/application (4.8ms)
+Completed 200 OK in 72ms (Views: 70.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+---------------------------------------
+Resthook::HookTest: test_has_a_resource
+---------------------------------------
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------
+Resthook::HookTest: test_has_an_action
+--------------------------------------
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+-------------------------------
+ResthookTest: test_is_an_engine
+-------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+---------------------------------------
+Resthook::HookTest: test_has_a_resource
+---------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------
+Resthook::HookTest: test_has_an_action
+--------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+NavigationTest: test_View_resthooks_admin_panel
+-----------------------------------------------
+Started GET "/resthook" for 127.0.0.1 at 2014-03-28 21:51:14 -0700
+Processing by Resthook::DashboardController#show as HTML
+  Rendered /Users/yosem/workspace/resthook/app/views/resthook/dashboard/show.html.haml within layouts/resthook/application (4.2ms)
+Completed 200 OK in 55ms (Views: 53.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+---------------------------------------
+Resthook::HookTest: test_has_a_resource
+---------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------
+Resthook::HookTest: test_has_an_action
+--------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------
+ResthookTest: test_is_an_engine
+-------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+NavigationTest: test_View_resthooks_admin_panel
+-----------------------------------------------
+Started GET "/resthook" for 127.0.0.1 at 2014-03-28 21:51:35 -0700
+Processing by Resthook::DashboardController#show as HTML
+  Rendered /Users/yosem/workspace/resthook/app/views/resthook/dashboard/show.html.haml within layouts/resthook/application (4.3ms)
+Completed 200 OK in 49ms (Views: 48.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+---------------------------------------
+Resthook::HookTest: test_has_a_resource
+---------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------
+Resthook::HookTest: test_has_an_action
+--------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------
+ResthookTest: test_is_an_engine
+-------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (2.7ms)[0m  [1mbegin transaction[0m
+---------------------------------------
+Resthook::HookTest: test_has_a_resource
+---------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------
+Resthook::HookTest: test_has_an_action
+--------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+---------------------------------------
+Resthook::HookTest: test_has_a_resource
+---------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------
+Resthook::HookTest: test_has_an_action
+--------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+NavigationTest: test_View_resthooks_admin_panel
+-----------------------------------------------
+Started GET "/resthook" for 127.0.0.1 at 2014-03-28 22:04:08 -0700
+Processing by Resthook::DashboardController#show as HTML
+  Rendered /Users/yosem/workspace/resthook/app/views/resthook/dashboard/show.html.haml within layouts/resthook/application (3.8ms)
+Completed 200 OK in 36ms (Views: 35.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+---------------------------------------
+Resthook::HookTest: test_has_a_resource
+---------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------
+Resthook::HookTest: test_has_an_action
+--------------------------------------
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------
+ResthookTest: test_is_an_engine
+-------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.9ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+NavigationTest: test_View_resthooks_admin_panel
+-----------------------------------------------
+Started GET "/resthook" for 127.0.0.1 at 2014-03-28 22:04:30 -0700
+Processing by Resthook::DashboardController#show as HTML
+  Rendered /Users/yosem/workspace/resthook/app/views/resthook/dashboard/show.html.haml within layouts/resthook/application (3.1ms)
+Completed 200 OK in 42ms (Views: 41.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+---------------------------------------
+Resthook::HookTest: test_has_a_resource
+---------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------
+Resthook::HookTest: test_has_an_action
+--------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------
+ResthookTest: test_is_an_engine
+-------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+---------------------------------------
+Resthook::HookTest: test_has_a_resource
+---------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------
+Resthook::HookTest: test_has_an_action
+--------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+NavigationTest: test_View_resthooks_admin_panel
+-----------------------------------------------
+Started GET "/resthook" for 127.0.0.1 at 2014-03-28 22:14:01 -0700
+Processing by Resthook::DashboardController#show as HTML
+  Rendered /Users/yosem/workspace/resthook/app/views/resthook/dashboard/show.html.haml within layouts/resthook/application (11.1ms)
+Completed 200 OK in 38ms (Views: 37.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+NavigationTest: test_View_resthooks_admin_panel
+-----------------------------------------------
+Started GET "/resthook" for 127.0.0.1 at 2014-03-28 22:19:05 -0700
+Processing by Resthook::DashboardController#show as HTML
+  [1m[35mResthook::Hook Load (1.6ms)[0m  SELECT "resthook_hooks".* FROM "resthook_hooks"
+  Rendered collection (0.0ms)
+  Rendered /Users/yosem/workspace/resthook/app/views/resthook/dashboard/show.html.haml within layouts/resthook/application (36.3ms)
+Completed 200 OK in 64ms (Views: 59.7ms | ActiveRecord: 1.6ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------
+Resthook::HookTest: test_has_a_resource
+---------------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------------
+Resthook::HookTest: test_has_an_action
+--------------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-------------------------------
+ResthookTest: test_is_an_engine
+-------------------------------
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+NavigationTest: test_View_resthooks_admin_panel
+-----------------------------------------------
+Started GET "/resthook" for 127.0.0.1 at 2014-03-28 22:21:58 -0700
+Processing by Resthook::DashboardController#show as HTML
+  [1m[35mResthook::Hook Load (1.5ms)[0m  SELECT "resthook_hooks".* FROM "resthook_hooks"
+  Rendered collection (0.0ms)
+  Rendered /Users/yosem/workspace/resthook/app/views/resthook/dashboard/show.html.haml within layouts/resthook/application (8.5ms)
+Completed 200 OK in 36ms (Views: 32.8ms | ActiveRecord: 1.5ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+---------------------------------------
+Resthook::HookTest: test_has_a_resource
+---------------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+--------------------------------------
+Resthook::HookTest: test_has_an_action
+--------------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-------------------------------
+ResthookTest: test_is_an_engine
+-------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+NavigationTest: test_View_resthooks_admin_panel
+-----------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+NavigationTest: test_View_resthooks_admin_panel
+-----------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+NavigationTest: test_View_resthooks_admin_panel
+-----------------------------------------------
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+NavigationTest: test_View_resthooks_admin_panel
+-----------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+---------------------------------------
+Resthook::HookTest: test_has_a_resource
+---------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+--------------------------------------
+Resthook::HookTest: test_has_an_action
+--------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+-------------------------------
+ResthookTest: test_is_an_engine
+-------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+NavigationTest: test_View_resthooks_admin_panel
+-----------------------------------------------
+Started GET "/resthook" for 127.0.0.1 at 2014-03-29 09:02:40 -0700
+Processing by Resthook::DashboardController#show as HTML
+  [1m[35mResthook::Hook Load (19.8ms)[0m  SELECT "resthook_hooks".* FROM "resthook_hooks"
+  Rendered collection (0.0ms)
+  Rendered /Users/yosem/workspace/resthook/app/views/resthook/dashboard/show.html.haml within layouts/resthook/application (29.9ms)
+Completed 200 OK in 180ms (Views: 157.3ms | ActiveRecord: 19.8ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Unable to load post_create, underlying cause No such file to load -- post_create 
+
+ /Users/yosem/.rvm/gems/ruby-2.1.0@resthook/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:229:in `require'
+/Users/yosem/.rvm/gems/ruby-2.1.0@resthook/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:229:in `block in require'
+/Users/yosem/.rvm/gems/ruby-2.1.0@resthook/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:214:in `load_dependency'
+/Users/yosem/.rvm/gems/ruby-2.1.0@resthook/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:229:in `require'
+/Users/yosem/.rvm/gems/ruby-2.1.0@resthook/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:330:in `require_or_load'
+/Users/yosem/.rvm/gems/ruby-2.1.0@resthook/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:289:in `depend_on'
+/Users/yosem/.rvm/gems/ruby-2.1.0@resthook/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:207:in `require_dependency'
+/Users/yosem/.rvm/gems/ruby-2.1.0@resthook/gems/activerecord-4.0.4/lib/active_record/fixtures.rb:773:in `try_to_load_dependency'
+/Users/yosem/.rvm/gems/ruby-2.1.0@resthook/gems/activerecord-4.0.4/lib/active_record/fixtures.rb:792:in `block in require_fixture_classes'
+/Users/yosem/.rvm/gems/ruby-2.1.0@resthook/gems/activerecord-4.0.4/lib/active_record/fixtures.rb:790:in `each'
+/Users/yosem/.rvm/gems/ruby-2.1.0@resthook/gems/activerecord-4.0.4/lib/active_record/fixtures.rb:790:in `require_fixture_classes'
+/Users/yosem/.rvm/gems/ruby-2.1.0@resthook/gems/activerecord-4.0.4/lib/active_record/fixtures.rb:768:in `fixtures'
+/Users/yosem/workspace/resthook/test/integration/navigation_test.rb:4:in `<class:NavigationTest>'
+/Users/yosem/workspace/resthook/test/integration/navigation_test.rb:3:in `<top (required)>'
+-e:1:in `require'
+Unable to load hook, underlying cause No such file to load -- hook 
+
+ /Users/yosem/.rvm/gems/ruby-2.1.0@resthook/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:229:in `require'
+/Users/yosem/.rvm/gems/ruby-2.1.0@resthook/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:229:in `block in require'
+/Users/yosem/.rvm/gems/ruby-2.1.0@resthook/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:214:in `load_dependency'
+/Users/yosem/.rvm/gems/ruby-2.1.0@resthook/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:229:in `require'
+/Users/yosem/.rvm/gems/ruby-2.1.0@resthook/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:330:in `require_or_load'
+/Users/yosem/.rvm/gems/ruby-2.1.0@resthook/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:289:in `depend_on'
+/Users/yosem/.rvm/gems/ruby-2.1.0@resthook/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:207:in `require_dependency'
+/Users/yosem/.rvm/gems/ruby-2.1.0@resthook/gems/activerecord-4.0.4/lib/active_record/fixtures.rb:773:in `try_to_load_dependency'
+/Users/yosem/.rvm/gems/ruby-2.1.0@resthook/gems/activerecord-4.0.4/lib/active_record/fixtures.rb:792:in `block in require_fixture_classes'
+/Users/yosem/.rvm/gems/ruby-2.1.0@resthook/gems/activerecord-4.0.4/lib/active_record/fixtures.rb:790:in `each'
+/Users/yosem/.rvm/gems/ruby-2.1.0@resthook/gems/activerecord-4.0.4/lib/active_record/fixtures.rb:790:in `require_fixture_classes'
+/Users/yosem/.rvm/gems/ruby-2.1.0@resthook/gems/activerecord-4.0.4/lib/active_record/fixtures.rb:768:in `fixtures'
+/Users/yosem/workspace/resthook/test/integration/navigation_test.rb:4:in `<class:NavigationTest>'
+/Users/yosem/workspace/resthook/test/integration/navigation_test.rb:3:in `<top (required)>'
+-e:1:in `require'
+Unable to load resthook_hook, underlying cause No such file to load -- resthook_hook 
+
+ /Users/yosem/.rvm/gems/ruby-2.1.0@resthook/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:229:in `require'
+/Users/yosem/.rvm/gems/ruby-2.1.0@resthook/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:229:in `block in require'
+/Users/yosem/.rvm/gems/ruby-2.1.0@resthook/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:214:in `load_dependency'
+/Users/yosem/.rvm/gems/ruby-2.1.0@resthook/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:229:in `require'
+/Users/yosem/.rvm/gems/ruby-2.1.0@resthook/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:330:in `require_or_load'
+/Users/yosem/.rvm/gems/ruby-2.1.0@resthook/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:289:in `depend_on'
+/Users/yosem/.rvm/gems/ruby-2.1.0@resthook/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:207:in `require_dependency'
+/Users/yosem/.rvm/gems/ruby-2.1.0@resthook/gems/activerecord-4.0.4/lib/active_record/fixtures.rb:773:in `try_to_load_dependency'
+/Users/yosem/.rvm/gems/ruby-2.1.0@resthook/gems/activerecord-4.0.4/lib/active_record/fixtures.rb:792:in `block in require_fixture_classes'
+/Users/yosem/.rvm/gems/ruby-2.1.0@resthook/gems/activerecord-4.0.4/lib/active_record/fixtures.rb:790:in `each'
+/Users/yosem/.rvm/gems/ruby-2.1.0@resthook/gems/activerecord-4.0.4/lib/active_record/fixtures.rb:790:in `require_fixture_classes'
+/Users/yosem/.rvm/gems/ruby-2.1.0@resthook/gems/activerecord-4.0.4/lib/active_record/fixtures.rb:768:in `fixtures'
+/Users/yosem/workspace/resthook/test/integration/navigation_test.rb:4:in `<class:NavigationTest>'
+/Users/yosem/workspace/resthook/test/integration/navigation_test.rb:3:in `<top (required)>'
+-e:1:in `require'
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/resthook" for 127.0.0.1 at 2014-03-30 11:52:57 -0700
+Processing by Resthook::DashboardController#show as HTML
+  Rendered /Users/yosem/workspace/resthook/app/views/resthook/dashboard/show.html.haml within layouts/resthook/application (3.5ms)
+Completed 200 OK in 61ms (Views: 61.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/resthook" for 127.0.0.1 at 2014-03-30 11:57:12 -0700
+Processing by Resthook::DashboardController#show as HTML
+  Rendered /Users/yosem/workspace/resthook/app/views/resthook/dashboard/show.html.haml within layouts/resthook/application (3.0ms)
+Completed 200 OK in 33ms (Views: 32.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/resthook" for 127.0.0.1 at 2014-03-30 12:25:45 -0700
+Processing by Resthook::DashboardController#show as HTML
+  Rendered /Users/yosem/workspace/resthook/app/views/resthook/dashboard/show.html.haml within layouts/resthook/application (3.9ms)
+Completed 200 OK in 55ms (Views: 54.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
