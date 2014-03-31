@@ -1,4 +1,4 @@
-require_dependency "resthook/application_controller"
+require_dependency 'resthook/application_controller'
 
 module Resthook
   class HooksController < ApplicationController
@@ -29,7 +29,7 @@ module Resthook
       if @hook.save
         redirect_to @hook, notice: 'Hook was successfully created.'
       else
-        render action: 'new'
+        render text: @hook.errors.full_messages, status: :unprocessable_entity
       end
     end
 
@@ -38,7 +38,7 @@ module Resthook
       if @hook.update(hook_params)
         redirect_to @hook, notice: 'Hook was successfully updated.'
       else
-        render action: 'edit'
+        render text: @hook.errors.full_messages, status: :unprocessable_entity
       end
     end
 
@@ -49,14 +49,14 @@ module Resthook
     end
 
     private
-      # Use callbacks to share common setup or constraints between actions.
-      def set_hook
-        @hook = Hook.find(params[:id])
-      end
 
-      # Only allow a trusted parameter "white list" through.
-      def hook_params
-        params.require(:hook).permit(:resource_type, :actions)
-      end
+    def set_hook
+      @hook = Hook.find(params[:id])
+    end
+
+    # Only allow a trusted parameter "white list" through.
+    def hook_params
+      params.require(:hook).permit(:subscribed_resource, :event, :url, :token)
+    end
   end
 end

@@ -1,5 +1,7 @@
-inherit_from: rubocop-todo.yml
-
 AllCops:
   Exclude:
-    - test/dummy/**
+    - spec/dummy/**
+    - db/**
+
+LineLength:
+ Max: 120
