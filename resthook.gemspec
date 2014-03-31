@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   DESC
 
   s.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
-  s.test_files = Dir['test/**/*']
+  s.test_files = Dir['spec/**/*']
 
   s.add_dependency 'rails', '~> 4.0.4'
   s.add_dependency 'haml', '~> 4.0'
@@ -27,10 +27,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'pry-rails'
   s.add_development_dependency 'inch', '~> 0.3'
   s.add_development_dependency 'coveralls'
-  s.add_development_dependency 'rspec-rails'
-  s.add_development_dependency 'capybara'
-  s.add_development_dependency 'guard-rspec'
-  s.add_development_dependency 'factory_girl_rails'
   s.add_development_dependency 'rb-fsevent', '~> 0' if RUBY_PLATFORM =~ /darwin/i
   s.add_development_dependency 'terminal-notifier-guard', '~> 1.5' if RUBY_PLATFORM =~ /darwin/i
 end

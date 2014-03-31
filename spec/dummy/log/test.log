@@ -487,3 +487,15 @@ Processing by Resthook::DashboardController#show as HTML
   Rendered /Users/yosem/workspace/resthook/app/views/resthook/dashboard/show.html.haml within layouts/resthook/application (3.9ms)
 Completed 200 OK in 55ms (Views: 54.7ms | ActiveRecord: 0.0ms)
   [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/resthook" for 127.0.0.1 at 2014-03-30 22:24:10 -0700
+Processing by Resthook::DashboardController#show as HTML
+  Rendered /Users/yosem/workspace/resthook/app/views/resthook/dashboard/show.html.haml within layouts/resthook/application (3.3ms)
+Completed 200 OK in 42ms (Views: 41.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/resthook" for 127.0.0.1 at 2014-03-30 22:24:10 -0700
+Processing by Resthook::DashboardController#show as HTML
+  Rendered /Users/yosem/workspace/resthook/app/views/resthook/dashboard/show.html.haml within layouts/resthook/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
