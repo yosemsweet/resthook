@@ -2,34 +2,36 @@ require "spec_helper"
 
 module Resthook
   describe HooksController do
+    routes { Resthook::Engine.routes }
+
     describe "routing" do
 
       it "routes to #index" do
-        get("/hooks").should route_to("hooks#index")
+        expect(get("/hooks")).to route_to("resthook/hooks#index")
       end
 
       it "routes to #new" do
-        get("/hooks/new").should route_to("hooks#new")
+        expect(get("/hooks/new")).to route_to("resthook/hooks#new")
       end
 
       it "routes to #show" do
-        get("/hooks/1").should route_to("hooks#show", :id => "1")
+        expect(get("/hooks/1")).to route_to("resthook/hooks#show", :id => "1")
       end
 
       it "routes to #edit" do
-        get("/hooks/1/edit").should route_to("hooks#edit", :id => "1")
+        expect(get("/hooks/1/edit")).to route_to("resthook/hooks#edit", :id => "1")
       end
 
       it "routes to #create" do
-        post("/hooks").should route_to("hooks#create")
+        expect(post("/hooks")).to route_to("resthook/hooks#create")
       end
 
       it "routes to #update" do
-        put("/hooks/1").should route_to("hooks#update", :id => "1")
+        expect(put("/hooks/1")).to route_to("resthook/hooks#update", :id => "1")
       end
 
       it "routes to #destroy" do
-        delete("/hooks/1").should route_to("hooks#destroy", :id => "1")
+        expect(delete("/hooks/1")).to route_to("resthook/hooks#destroy", :id => "1")
       end
 
     end
