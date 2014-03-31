@@ -1,20 +1,21 @@
 require 'spec_helper'
 
-describe "hooks/new" do
+describe 'hooks/new' do
+  let(:hook) do
+    stub_model(Hook,
+               subscribed_resource: 'Subscribed Resource Test Type',
+               event: 'Tested')
+  end
   before(:each) do
-    assign(:hook, stub_model(Hook,
-      :resource_type => "MyString",
-      :actions => "MyString"
-    ).as_new_record)
+    assign(:hook, hook).as_new_record
   end
 
-  it "renders new hook form" do
+  it 'renders new hook form' do
     render
 
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
-    assert_select "form[action=?][method=?]", hooks_path, "post" do
-      assert_select "input#hook_resource_type[name=?]", "hook[resource_type]"
-      assert_select "input#hook_actions[name=?]", "hook[actions]"
+    assert_select 'form[action=?][method=?]', hooks_path, 'post' do
+      assert_select 'input#hook_subscribed_resource[name=?]', 'hook[subscribed_resource]'
+      assert_select 'input#hook_event[name=?]', 'hook[event]'
     end
   end
 end

@@ -1,20 +1,22 @@
 require 'spec_helper'
 
-describe "hooks/edit" do
+describe 'hooks/edit' do
+  let(:hook) do
+    stub_model(Hook,
+               subscribed_resource: 'Subscribed Resource Test Type',
+               event: 'Tested')
+  end
   before(:each) do
-    @hook = assign(:hook, stub_model(Hook,
-      :resource_type => "MyString",
-      :actions => "MyString"
-    ))
+    assign(:hook, hook).as_new_record
   end
 
-  it "renders the edit hook form" do
+  it 'renders the edit hook form' do
     render
 
     # Run the generator again with the --webrat flag if you want to use webrat matchers
-    assert_select "form[action=?][method=?]", hook_path(@hook), "post" do
-      assert_select "input#hook_resource_type[name=?]", "hook[resource_type]"
-      assert_select "input#hook_actions[name=?]", "hook[actions]"
+    assert_select 'form[action=?][method=?]', hook_path(@hook), 'post' do
+      assert_select 'input#hook_subscribed_resource[name=?]', 'hook[subscribed_resource]'
+      assert_select 'input#hook_event[name=?]', 'hook[event]'
     end
   end
 end
