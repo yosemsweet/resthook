@@ -1,20 +1,28 @@
 # We don't want to run rubocop and inch if minitest failed.
 group :in_progress, halt_on_fail: true do
-  guard :minitest do
-    watch(/^test\/.+_test\.rb$/)
-    watch('test\/test_helper.rb')  { 'test' }
-    watch(/^lib\/(.+)\.rb$/) { |m| 'test/#{m[1]}_test.rb' }
-    watch(/^lib\/(.+)\.rb$/) { |m| 'test/integration' }
+  guard :rspec do
+    watch(%r{^spec/.+_spec\.rb$})
+    watch(%r{^lib/resthook/(.+)\.rb$})     { |m| "spec/lib/#{m[1]}_spec.rb" }
+    watch('spec/spec_helper.rb')  { "spec" }
 
-    # Rails 4
-    watch(/^app\/(.+)\.rb/) { |m| 'test/#{m[1]}_test.rb' }
-    watch(%r{^app/controllers/*\.rb}) { 'test/controllers' }
+    # Rails example
+    watch(%r{^app/resthook/(.+)\.rb$})                           { |m| "spec/#{m[1]}_spec.rb" }
+    watch(%r{^app/resthook/(.*)(\.erb|\.haml|\.slim)$})          { |m| "spec/#{m[1]}#{m[2]}_spec.rb" }
+    watch(%r{^app/resthook/controllers/(.+)_(controller)\.rb$})  do |m|
+      [
+        "spec/routing/#{m[1]}_routing_spec.rb",
+        "spec/#{m[2]}s/#{m[1]}_#{m[2]}_spec.rb",
+        "spec/features/#{m[1]}_spec.rb"
+      ]
+    end
+    watch(%r{^spec/support/(.+)\.rb$})                  { "spec" }
+    watch('config/routes.rb')                           { "spec/routing" }
+    watch('app/controllers/resthook/application_controller.rb')  { "spec/controllers" }
+
+    # Capybara features specs
+    watch(%r{^app/views/resthook/(.+)/.*\.(erb|haml|slim)$})     { |m| "spec/features/#{m[1]}_spec.rb" }
   end
 
-  guard :rubocop do
-    watch(/.+\.rb$/)
-    watch(/(?:.+\/)?\.rubocop\.yml$/) { |m| File.dirname(m[0]) }
-  end
 
   require 'guard/plugin'
 

@@ -5,3 +5,6 @@ rvm:
 env:
   - DB=postgresql
 cache: bundler
+
+before-script: rake db:test:prepare
+script: bundle exec rspec spec
