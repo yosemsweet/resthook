@@ -45,7 +45,7 @@ module Resthook
     # DELETE /hooks/1
     def destroy
       @hook.destroy
-      redirect_to hooks_url, notice: 'Hook was successfully destroyed.'
+      redirect_to root_url, notice: 'Hook was successfully destroyed.'
     end
 
     private

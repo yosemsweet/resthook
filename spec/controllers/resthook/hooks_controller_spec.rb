@@ -106,7 +106,7 @@ module Resthook
       describe 'with invalid params' do
         it 'returns an unprocessable entity error' do
           hook = Hook.create! valid_attributes
-          
+
           # Trigger the behavior that occurs when invalid params are submitted
           Hook.any_instance.stub(:save).and_return(false)
           put :update, {:id => hook.to_param, :hook => { 'subscribed_resource' => 'invalid value' }}, valid_session
@@ -126,7 +126,7 @@ module Resthook
       it 'redirects to the hooks list' do
         hook = Hook.create! valid_attributes
         delete :destroy, {:id => hook.to_param}, valid_session
-        expect(response).to redirect_to(hooks_url)
+        expect(response).to redirect_to(root_path)
       end
     end
 

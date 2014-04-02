@@ -13,6 +13,8 @@ feature 'Viewing state of resthooks' do
     expect(page).to have_content hook.subscribed_resource
     expect(page).to have_content hook.event
     expect(page).to have_content hook.access_token
-    expect(page).to have_link 'view', href: resthook.hook_path(hook)
+    expect(page).to have_link 'View', href: resthook.hook_path(hook)
+    expect(page).to have_link 'Edit', href: resthook.edit_hook_path(hook)
+    expect(page).to have_link 'Delete' #TODO: Need to test href here too
   end
 end
