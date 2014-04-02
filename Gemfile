@@ -14,6 +14,9 @@ gem 'rspec-rails'
 gem 'capybara'
 gem 'guard-rspec'
 gem 'factory_girl_rails'
+gem 'shoulda'
+gem 'haml-rails'
+gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'

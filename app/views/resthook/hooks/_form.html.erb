@@ -1,0 +1,37 @@
+<%= form_for(@hook) do |f| %>
+  <% if @hook.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@hook.errors.count, "error") %> prohibited this hook from being saved:</h2>
+
+      <ul>
+      <% @hook.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :subscribed_resource %><br>
+    <%= f.text_field :subscribed_resource, label: 'Resource' %>
+  </div>
+  <div class="field">
+    <%= f.label :event %><br>
+    <%= f.text_field :event %>
+  </div>
+  <div class="field">
+    <%= f.label :url %><br>
+    <%= f.text_field :url %>
+  </div>
+  <div class="field">
+    <%= f.label :version %><br>
+    <%= f.text_field :version %>
+  </div>
+  <div class="field">
+    <%= f.label :access_token %><br>
+    <%= f.text_field :access_token %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

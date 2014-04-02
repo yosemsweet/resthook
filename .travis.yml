@@ -6,5 +6,7 @@ env:
   - DB=postgresql
 cache: bundler
 
-before-script: rake db:test:prepare
-script: bundle exec rspec spec
+script:
+  - bundle exec rake app:db:migrate
+  - bundle exec rake app:db:test:prepare
+  - bundle exec rspec spec

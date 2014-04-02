@@ -1,1 +1,6 @@
 %h1 Resthooks - Have a RedHook while you rest
+
+.panel.panel-default
+  .panel-heading Active Hooks
+  .panel-body
+    = render collection: @hooks, partial: 'resthook/hooks/summary', as: :hook

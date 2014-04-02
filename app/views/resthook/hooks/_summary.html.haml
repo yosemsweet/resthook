@@ -1,0 +1,7 @@
+.row[hook]
+  .col-sm-9.hook-details
+    %span.subscribed-resource= hook.subscribed_resource
+    %span.event= hook.event
+    %span.url= hook.url
+    %span.access-token= hook.access_token
+  .col-sm-3= render partial: 'resthook/hooks/actions', object: hook, as: :hook

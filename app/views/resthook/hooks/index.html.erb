@@ -1,0 +1,33 @@
+<h1>Listing hooks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Resource</th>
+      <th>Event</th>
+      <th>URL</th>
+      <th>Token</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @hooks.each do |hook| %>
+      <tr>
+        <td><%= hook.subscribed_resource %></td>
+        <td><%= hook.event %></td>
+        <td><%= hook.url %></td>
+        <td><%= hook.access_token %></td>
+        <td><%= link_to 'Show', hook %></td>
+        <td><%= link_to 'Edit', edit_hook_path(hook) %></td>
+        <td><%= link_to 'Destroy', hook, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Hook', new_hook_path %>

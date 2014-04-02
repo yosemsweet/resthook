@@ -11,9 +11,9 @@
 #----------------------------------------------------------------------------
 
 # Dummy app files
-/test/dummy/log/*
-/test/dummy/db/*
-/test/dummy/tmp/*
+/spec/dummy/log/*
+/spec/dummy/db/*
+/spec/dummy/tmp/*
 
 # bundler state
 /.bundle
