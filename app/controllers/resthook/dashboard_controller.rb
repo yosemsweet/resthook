@@ -7,6 +7,7 @@ module Resthook
     # Display the dashboard
     # No special parameters required.
     def show
+      @hooks = Hook.all
     end
   end
 end

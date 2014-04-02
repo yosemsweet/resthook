@@ -1,0 +1,12 @@
+//= require resthook/bootstrap/affix
+//= require resthook/bootstrap/alert
+//= require resthook/bootstrap/button
+//= require resthook/bootstrap/carousel
+//= require resthook/bootstrap/collapse
+//= require resthook/bootstrap/dropdown
+//= require resthook/bootstrap/tab
+//= require resthook/bootstrap/transition
+//= require resthook/bootstrap/scrollspy
+//= require resthook/bootstrap/modal
+//= require resthook/bootstrap/tooltip
+//= require resthook/bootstrap/popover

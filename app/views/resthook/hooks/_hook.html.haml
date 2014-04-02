@@ -1,0 +1,20 @@
+%div[hook]
+  %h3 Hook
+  %dl.hook-details
+    %dt Subscribed Resource
+    %dd= hook.subscribed_resource
+    %dt Event
+    %dd= hook.event
+    %dt URL
+    %dd= hook.url
+    %dt Version
+    %dd= hook.version
+    %dt Access Token
+    %dd= hook.access_token
+
+    %dt Created At
+    %dd= hook.created_at
+    %dt Updated At
+    %dd= hook.updated_at
+
+  = render partial: 'resthook/hooks/actions', object: hook, as: :hook

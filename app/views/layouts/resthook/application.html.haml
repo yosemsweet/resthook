@@ -4,13 +4,13 @@
     %meta(content="width=device-width, initial-scale=1.0" name="viewport")
     %title= content_for?(:title) ? yield(:title) : "Resthook"
     %meta(http-equiv="X-UA-Compatible" content="IE=edge")
-    = stylesheet_link_tag "application", :media => "all"
-    = javascript_include_tag "application"
+    = stylesheet_link_tag "resthook/application", :media => "all"
+    = javascript_include_tag "resthook/application"
     = csrf_meta_tags
     = yield(:head)
   %body{:class => "#{controller_name} #{action_name}"}
     .container
       .content
-        .row
-          = yield
+        = yield
+
         %footer

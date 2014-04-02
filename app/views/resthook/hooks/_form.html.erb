@@ -12,12 +12,24 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :resource_type %><br>
-    <%= f.text_field :resource_type %>
+    <%= f.label :subscribed_resource %><br>
+    <%= f.text_field :subscribed_resource, label: 'Resource' %>
   </div>
   <div class="field">
-    <%= f.label :actions %><br>
-    <%= f.text_field :actions %>
+    <%= f.label :event %><br>
+    <%= f.text_field :event %>
+  </div>
+  <div class="field">
+    <%= f.label :url %><br>
+    <%= f.text_field :url %>
+  </div>
+  <div class="field">
+    <%= f.label :version %><br>
+    <%= f.text_field :version %>
+  </div>
+  <div class="field">
+    <%= f.label :access_token %><br>
+    <%= f.text_field :access_token %>
   </div>
   <div class="actions">
     <%= f.submit %>
